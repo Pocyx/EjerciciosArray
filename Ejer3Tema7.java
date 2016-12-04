@@ -11,12 +11,12 @@ import java.util.Scanner;
  *
  * @author PocyxDesigner
  * 
- * Escribe un programa que lea 10 números por teclado y que luego los muestre
+ * Escribe un programa que lea 12 números por teclado y que luego los muestre
     en orden inverso, es decir, el primero que se introduce es el último en
     mostrarse y viceversa.
  * 
  */
-public class Ejer3Tema4 {
+public class Ejer3Tema7 {
     /**
      * @param args the command line arguments
      */

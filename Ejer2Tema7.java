@@ -15,7 +15,7 @@ package ejerciciosarray;
     de todos los elementos del array. ¿Qué sucede con los valores de los elementos
     que no han sido inicializados?- Aparece vacío.
  */
-public class Ejer2Tema4 {
+public class Ejer2Tema7 {
     /**
      * @param args the command line arguments
      */
