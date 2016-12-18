@@ -69,6 +69,8 @@ public class Ejer6Tema7 {
         for(int i=0;i<array.length;i++){
             aux = array[i];
             int j = i+1;
+            //Pasa la ultima posición del array introducido a la 
+            //primera posicion del nuevo array.
             if(i==0){
                 rotados[i]=array[14];
             }else if(j<15){

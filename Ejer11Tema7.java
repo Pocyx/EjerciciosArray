@@ -74,8 +74,9 @@ public class Ejer11Tema7 {
         ///
         //int [] ordenados = new int[20];
         int orden = 0;
-        int p,a =0;
+        //int p,a =0;
         System.out.println("");
+        /**
         for(int i=0;i<numeros.length;i++){
             
             for(p=1;p<(numeros[i]+1);p++){
@@ -89,20 +90,48 @@ public class Ejer11Tema7 {
                     orden++;
                 }
             
-        }
+        }*/
         
         for(int i =0;i<numeros.length;i++){
+            boolean esPrimo = true;
+            //int p=1;p<(numeros[i]);p++
+            for(int p=2;p<=Math.sqrt(numeros[i]);p++){
+                //&& numeros[i]!=1 && numeros[i]!=2
+                if(numeros[i]%p==0 ){
+                    //a++;
+                    esPrimo = false;
+                }
+            }
             
-            for(p=1;p<(numeros[i]+1);p++){
-                if(numeros[i]%p==0){
-                    a++;
-                   }
-                }
-                if(a!=2){
-                    primos[orden]=numeros[i];
+            if(esPrimo){
+                primos[orden]=numeros[i];
                         //System.out.print(" '"+numeros[i]+"' ");
-                    orden++;
+                orden++;
+                
+            }
+                    
+                
+             
+        }
+        for(int i =0;i<numeros.length;i++){
+            boolean esPrimo = true;
+            //int p=1;p<(numeros[i]);p++
+            for(int p=2;p<=Math.sqrt(numeros[i]);p++){
+                //&& numeros[i]!=1 && numeros[i]!=2
+                if(numeros[i]%p==0 ){
+                    //a++;
+                    esPrimo = false;
                 }
+            }
+            
+            if(!esPrimo){
+                primos[orden]=numeros[i];
+                        //System.out.print(" '"+numeros[i]+"' ");
+                orden++;
+                
+            }
+                    
+                
              
         }
         

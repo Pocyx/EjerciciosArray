@@ -75,18 +75,19 @@ public class Ejer14Tema7 {
         
         
         for(int i=0;i<palabras.length;i++){
+            boolean esColor = false;
             for(int e=0;e<colores.length;e++){
-                if(!colores[e].equals(palabras[i])){
-                    rotados[orden]=palabras[i];
-                    
-                    if(orden<7){
-                        orden++;
-                    }
+                if(colores[e].equals(palabras[i])){
+                    esColor = true;
 
                 }
                 
                 
             }
+            if (!esColor) {
+                rotados[orden++]=palabras[i];
+            }
+            
             
             
         }
@@ -109,7 +110,7 @@ public class Ejer14Tema7 {
             System.out.print("─────┼");
         }
         System.out.print("────┤");
-        System.out.print("\n│ Numeros");
+        System.out.print("\n│ Colores");
         for (int i = 0; i < 8; i++) {
             System.out.printf(" %8s ", rotados[i]);
         }
